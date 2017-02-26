@@ -22,12 +22,13 @@ private:
     Ui::MainWindow *ui;
     QString fileName;
     QVector<QString> pages;
+    int page;
     void updateTitle();
-    void addElementDataToMap(QXmlStreamReader& xml, QMap<QString, QString>& map);
 
 
 private slots:
-    void slotOpenFile();
+    void openFile();
+    void openPage();
 };
 
 #endif // MAINWINDOW_H
